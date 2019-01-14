@@ -1,0 +1,127 @@
+{
+  "_from": "raneto",
+  "_id": "raneto@0.16.0",
+  "_inBundle": false,
+  "_integrity": "sha512-ndQ5XTYUa0Zx7Cag1as/H7JeDh8dystAr526fVBwK0bXKiB5u2UD+YOYsWPNd+5T8jFZE2mYKAupED03ZRounw==",
+  "_location": "/raneto",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "raneto",
+    "name": "raneto",
+    "escapedName": "raneto",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/raneto/-/raneto-0.16.0.tgz",
+  "_shasum": "04f4a46aa230ab629b1653684b29f96fffa757cf",
+  "_spec": "raneto",
+  "_where": "C:\\Raneto",
+  "author": {
+    "name": "Gilbert Pellegrom",
+    "email": "gilbert@pellegrom.me"
+  },
+  "bin": {
+    "raneto": "./bin/raneto"
+  },
+  "bugs": {
+    "url": "https://github.com/gilbitron/Raneto/issues"
+  },
+  "bundleDependencies": false,
+  "contributors": [
+    {
+      "name": "https://github.com/gilbitron/Raneto/graphs/contributors"
+    }
+  ],
+  "dependencies": {
+    "always-tail": "^0.2.0",
+    "body-parser": "^1.18.2",
+    "bootstrap": "^3.3.7",
+    "bootstrap-rtl": "^3.3.4",
+    "commander": "^2.15.1",
+    "cookie-parser": "^1.4.3",
+    "debug": "^3.1.0",
+    "express": "^4.16.3",
+    "express-session": "^1.15.6",
+    "extend": "^3.0.1",
+    "fitvids": "^2.0.0",
+    "glob": "^7.1.2",
+    "gulp": "^3.9.1",
+    "gulp-shell": "^0.6.5",
+    "highlightjs": "^9.10.0",
+    "hogan-express": "^0.5.2",
+    "jquery": "^2.2.4",
+    "jquery-backstretch": "^2.1.16",
+    "js-yaml": "^3.11.0",
+    "lunr": "^2.1.5",
+    "lunr-languages": "^1.0.0",
+    "markdown-it": "^8.4.0",
+    "markdown-toc": "^1.2.0",
+    "marked": "^0.3.19",
+    "masonry-layout": "^4.2.1",
+    "moment": "^2.22.1",
+    "morgan": "^1.9.0",
+    "passport": "^0.4.0",
+    "passport-google-oauth20": "^1.0.0",
+    "pm2": "^2.10.2",
+    "sanitize-filename": "^1.6.1",
+    "serve-favicon": "^2.5.0",
+    "sitemap": "^1.13.0",
+    "sweetalert2": "^7.19.1",
+    "underscore": "^1.9.0",
+    "underscore.string": "^3.3.4",
+    "validator": "^9.4.1"
+  },
+  "deprecated": false,
+  "description": "Markdown powered Knowledgebase",
+  "devDependencies": {
+    "chai": "^4.1.1",
+    "eslint": "^4.19.1",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-plugin-import": "^2.11.0",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-promise": "^3.7.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "mocha": "^5.1.1",
+    "supertest": "^3.0.0"
+  },
+  "engines": {
+    "node": ">=4.0.0"
+  },
+  "homepage": "https://github.com/gilbitron/Raneto#readme",
+  "keywords": [
+    "raneto",
+    "knowledgebase",
+    "markdown",
+    "static",
+    "site",
+    "generator"
+  ],
+  "license": "MIT",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://raw.githubusercontent.com/gilbitron/Raneto/master/LICENSE"
+    }
+  ],
+  "main": "./app/index.js",
+  "name": "raneto",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gilbitron/Raneto.git"
+  },
+  "scripts": {
+    "gulp": "gulp",
+    "lint": "eslint bin/*.js app/**/*.js example/**/*.js test/*.js translate/*.json gulpfile.js",
+    "postinstall": "npm run gulp",
+    "start": "DEBUG=raneto node example/server.js",
+    "start_win": "set DEBUG=raneto&&node example/server.js",
+    "test": "npm run lint && mocha --reporter spec test/*.js"
+  },
+  "version": "0.16.0"
+}
